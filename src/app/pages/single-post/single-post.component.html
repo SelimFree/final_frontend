@@ -1,0 +1,187 @@
+<app-header></app-header>
+<div class="contnet">
+    <app-side-section></app-side-section>
+    <div class="post">
+        <div class="post-header">
+            <div class="title">Video processing with WebCodecs</div>
+            <div class="sibtitle">
+                <div class="post-date">POSTED 15 DAYS AGO</div>
+                <div class="post-path">PROGRAM / FRONTEND / WEBCODECS</div>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="post-content">
+            Modern web technologies provide ample ways to work with video. Media
+            Stream API, Media Recording API, Media Source API, and WebRTC API
+            add up to a rich tool set for recording, transferring, and playing
+            video streams. While solving certain high-level tasks, these APIs
+            don't let web programmers work with individual components of a video
+            stream such as frames and unmuxed chunks of encoded video or audio.
+            To get low-level access to these basic components, developers have
+            been using WebAssembly to bring video and audio codecs into the
+            browser. But given that modern browsers already ship with a variety
+            of codecs (which are often accelerated by hardware), repackaging
+            them as WebAssembly seems like a waste of human and computer
+            resources. By design WebCodecs API does all the heavy lifting
+            asynchronously and off the main thread. But since frame and chunk
+            callbacks can often be called multiple times a second, they might
+            clutter the main thread and thus make the website less responsive.
+            Therefore it is preferable to move handling of individual frames and
+            encoded chunks into a web worker. To help with that, ReadableStream
+            provides a convenient way to automatically transfer all frames
+            coming from a media track to the worker. For example,
+            MediaStreamTrackProcessor can be used to obtain a ReadableStream for
+            a media stream track coming from the web camera. After that the
+            stream is transferred to a web worker where frames are read one by
+            one and queued into a VideoEncoder. With
+            HTMLCanvasElement.transferControlToOffscreen even rendering can be
+            done off the main thread. But if all the high level tools turned out
+            to be inconvenient, VideoFrame itself is transferable and may be
+            moved between workers. Modern web technologies provide ample ways to
+            work with video. Media Stream API, Media Recording API, Media Source
+            API, and WebRTC API add up to a rich tool set for recording,
+            transferring, and playing video streams. While solving certain
+            high-level tasks, these APIs don't let web programmers work with
+            individual components of a video stream such as frames and unmuxed
+            chunks of encoded video or audio. To get low-level access to these
+            basic components, developers have been using WebAssembly to bring
+            video and audio codecs into the browser. But given that modern
+            browsers already ship with a variety of codecs (which are often
+            accelerated by hardware), repackaging them as WebAssembly seems like
+            a waste of human and computer resources. By design WebCodecs API
+            does all the heavy lifting asynchronously and off the main thread.
+            But since frame and chunk callbacks can often be called multiple
+            times a second, they might clutter the main thread and thus make the
+            website less responsive. Therefore it is preferable to move handling
+            of individual frames and encoded chunks into a web worker. To help
+            with that, ReadableStream provides a convenient way to automatically
+            transfer all frames coming from a media track to the worker. For
+            example, MediaStreamTrackProcessor can be used to obtain a
+            ReadableStream for a media stream track coming from the web camera.
+            After that the stream is transferred to a web worker where frames
+            are read one by one and queued into a VideoEncoder. With
+            HTMLCanvasElement.transferControlToOffscreen even rendering can be
+            done off the main thread. But if all the high level tools turned out
+            to be inconvenient, VideoFrame itself is transferable and may be
+            moved between workers. Modern web technologies provide ample ways to
+            work with video. Media Stream API, Media Recording API, Media Source
+            API, and WebRTC API add up to a rich tool set for recording,
+            transferring, and playing video streams. While solving certain
+            high-level tasks, these APIs don't let web programmers work with
+            individual components of a video stream such as frames and unmuxed
+            chunks of encoded video or audio. To get low-level access to these
+            basic components, developers have been using WebAssembly to bring
+            video and audio codecs into the browser. But given that modern
+            browsers already ship with a variety of codecs (which are often
+            accelerated by hardware), repackaging them as WebAssembly seems like
+            a waste of human and computer resources. By design WebCodecs API
+            does all the heavy lifting asynchronously and off the main thread.
+            But since frame and chunk callbacks can often be called multiple
+            times a second, they might clutter the main thread and thus make the
+            website less responsive. Therefore it is preferable to move handling
+            of individual frames and encoded chunks into a web worker. To help
+            with that, ReadableStream provides a convenient way to automatically
+            transfer all frames coming from a media track to the worker. For
+            example, MediaStreamTrackProcessor can be used to obtain a
+            ReadableStream for a media stream track coming from the web camera.
+            After that the stream is transferred to a web worker where frames
+            are read one by one and queued into a VideoEncoder. With
+            HTMLCanvasElement.transferControlToOffscreen even rendering can be
+            done off the main thread. But if all the high level tools turned out
+            to be inconvenient, VideoFrame itself is transferable and may be
+            moved between workers.
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="comment-container">
+            <form class="comment-form">
+                <mat-form-field class="comment-full-width">
+                    <mat-label>Comment</mat-label>
+                    <input
+                        matInput
+                        #message
+                        maxlength="256"
+                        placeholder="Type something..."
+                    />
+                    <mat-hint align="end"
+                        >{{ message.value.length }} / 256</mat-hint
+                    >
+                </mat-form-field>
+            </form>
+            <button
+                mat-fab
+                color="primary"
+                aria-label="Example icon button with a delete icon"
+            >
+                <mat-icon>send</mat-icon>
+            </button>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="other-comments">
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="" />
+                    <div class="username">Selim</div>
+                    <div class="comment-date">POSTED 2023-04-30 20:26</div>
+                </div>
+                <div class="comment-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusantium cupiditate deserunt, tempore distinctio
+                    voluptate, dolor ipsam ducimus nam, commodi neque repellat
+                    dignissimos reprehenderit vel recusandae autem alias.
+                    Excepturi, aliquid dolores.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="" />
+                    <div class="username">Selim</div>
+                    <div class="comment-date">POSTED 2023-04-30 20:26</div>
+                </div>
+                <div class="comment-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusantium cupiditate deserunt, tempore distinctio
+                    voluptate, dolor ipsam ducimus nam, commodi neque repellat
+                    dignissimos reprehenderit vel recusandae autem alias.
+                    Excepturi, aliquid dolores.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="" />
+                    <div class="username">Selim</div>
+                    <div class="comment-date">POSTED 2023-04-30 20:26</div>
+                </div>
+                <div class="comment-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusantium cupiditate deserunt, tempore distinctio
+                    voluptate, dolor ipsam ducimus nam, commodi neque repellat
+                    dignissimos reprehenderit vel recusandae autem alias.
+                    Excepturi, aliquid dolores.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="" />
+                    <div class="username">Selim</div>
+                    <div class="comment-date">POSTED 2023-04-30 20:26</div>
+                </div>
+                <div class="comment-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusantium cupiditate deserunt, tempore distinctio
+                    voluptate, dolor ipsam ducimus nam, commodi neque repellat
+                    dignissimos reprehenderit vel recusandae autem alias.
+                    Excepturi, aliquid dolores.
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-recent-section></app-recent-section>
+</div>
+<app-footer></app-footer>
