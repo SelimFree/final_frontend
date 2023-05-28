@@ -82,3 +82,8 @@
 
 
 
+.categorie button{
+    background-color: var(--purple-primary);
+    color: black;
+    color: rgb(232, 230, 231);
+}
