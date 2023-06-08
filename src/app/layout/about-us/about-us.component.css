@@ -1,9 +1,11 @@
 /* global styles*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
-body{
+
+body {
     background-color: #333;
     color: aliceblue;
 }
+
 .developers-container {
     display: grid;
     justify-content: center;
@@ -19,11 +21,11 @@ body{
 
 .developer-card {
     padding: 1rem;
+    padding-top: 2rem;
     width: 21rem;
     height: 29rem;
     background-color: #3c3c3c;
-
-     display: flex;
+    display: flex;
     flex-direction: column;
     box-sizing: border-box;
     box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
@@ -37,17 +39,21 @@ body{
     margin-top: 10px;
 }
 
-.image{
-    width: 200px;
-    height: 200px;
+.image {
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(34, 34, 34, 0.5);
+
 }
-.picContainer{
+
+.picContainer {
     display: grid;
     justify-content: center;
     align-items: center;
 }
-button{
+
+button {
     background-color: #3c3c3c;
     color: aliceblue;
     border: 2px solid rgb(47, 47, 47);
@@ -58,11 +64,11 @@ button{
     font-size: 2rem;
 }
 
-.about-title{
+.about-title {
     display: grid;
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
-    font-weight:bolder;
+    font-weight: bolder;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
