@@ -1,0 +1,23 @@
+<app-header></app-header>
+
+<body>
+    <div class="about-title">
+        <h1>Our Developers!</h1>
+    </div>
+    <div class="developers-container">
+        <div class="navigation-arrows">
+            <button (click)="previousDeveloper()">&#8249;</button>
+            <div class="developer-card">
+                <div class="picContainer"><img [src]="getDeveloperPicture()" alt="Developer Picture" class="image" />
+                </div>
+                <p></p>
+                <h2 style="text-align: center;">{{ developers[currentDeveloperIndex].name }}</h2>
+                <p>Country: {{ developers[currentDeveloperIndex].country }}</p>
+                <p>Position: {{ developers[currentDeveloperIndex].position }}</p>
+                <p>About: {{ developers[currentDeveloperIndex].introduction }}</p>
+            </div>
+            <button (click)="nextDeveloper()">&#8250;</button>
+        </div>
+    </div>
+</body>
+<app-footer></app-footer>

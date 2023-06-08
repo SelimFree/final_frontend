@@ -1,0 +1,68 @@
+/* global styles*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
+body{
+    background-color: #333;
+    color: aliceblue;
+}
+.developers-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    /* margin-top: 1rem; */
+    /*
+    margin-bottom: 1rem; */
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
+.developer-card {
+    padding: 1rem;
+    width: 21rem;
+    height: 29rem;
+    background-color: #3c3c3c;
+
+     display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: rgba(0, 0, 0, 0.2) 2px solid;
+    border-radius: 15px;
+}
+
+.navigation-arrows {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.picContainer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: #3c3c3c;
+    color: aliceblue;
+    border: 2px solid rgb(47, 47, 47);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.about-title{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    font-weight:bolder;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

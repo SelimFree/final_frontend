@@ -22,6 +22,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatDialogModule } from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { LoginModalComponent } from './layout/login-modal/login-modal.component';
+import { AboutUsComponent } from './layout/about-us/about-us.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { LoginModalComponent } from './layout/login-modal/login-modal.component'
     HomeComponent,
     SinglePostComponent,
     RegisterModalComponent,
-    LoginModalComponent
+    LoginModalComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
