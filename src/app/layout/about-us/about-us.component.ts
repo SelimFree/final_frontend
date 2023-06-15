@@ -20,18 +20,18 @@ export class AboutUsComponent {
       name: 'Anass El Aqli',
       country: 'Morocco',
       position: 'Frontend Developer',
-      introduction: 'Anass served as frontend developer using Angular and HTML/CSS.'
+      introduction: 'Anas served as frontend developer using Angular (working with Typscript and HTML/CSS).'
     },
     {
       picture: 'developer1.jpg',
       name: 'Selim Altayev',
       country: 'Turkmenistan',
       position: 'Frontend Developer',
-      introduction: 'Selim served as frontend developer using Angular and HTML/CSS.'
+      introduction: 'Selim also served as frontend developer using Angular (working with Typscript and HTML/CSS).'
     },
     {
       picture: 'developer2.jpg',
-      name: 'Aliento',
+      name: 'Zhang Wentao',
       country: 'China',
       position: 'Database Administrator',
       introduction: 'Aliento is served as Database Administrator using SQLite.'
