@@ -23,6 +23,8 @@ import {MatDialogModule } from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { LoginModalComponent } from './layout/login-modal/login-modal.component';
 import { AboutUsComponent } from './layout/about-us/about-us.component';
+import { WritePostComponent } from './pages/write-post/write-post.component';
+import { ContactUsComponent } from './layout/contact-us/contact-us.component';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { AboutUsComponent } from './layout/about-us/about-us.component';
     SinglePostComponent,
     RegisterModalComponent,
     LoginModalComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    WritePostComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

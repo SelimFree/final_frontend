@@ -1,8 +1,10 @@
 <header>
     <mat-toolbar>
-        <span class="brand"><img src="assets/animal.svg" alt="Logo">Bunlog</span>
+        <a routerLink="/" routerLinkActive="active" class="brand"><img src="assets/animal.svg" alt="Logo">Bunlog</a>
         <span class="spacer"></span>
-        <a routerLink="/about-us" class="about-us">About Us</a>
+        <a routerLink="/about-us" class="header-item">About Us</a>
+        <a routerLink="/contact-us" class="header-item">Contact Us</a>
+        <a routerLink="/write-post" routerLinkActive="active" class="header-item">Write Post</a>
         <button class="accountBtn" mat-raised-button [matMenuTriggerFor]="belowMenu">Account</button>
         <mat-menu #belowMenu="matMenu" yPosition="below">
             <button mat-menu-item (click)="openLoginDialog()" >Login</button>

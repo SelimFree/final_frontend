@@ -18,5 +18,17 @@ body {
     font-family: 'Montserrat', sans-serif;
     /* font-family: 'Roboto', sans-serif; */
     /* font-family: 'Courier New', Courier, monospace; */
+    background-color: #333;
+    display: grid;
+
 }
 
+@media (max-width: 768px) {
+    .contnet {
+        flex-wrap: wrap;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+
+    }
+}

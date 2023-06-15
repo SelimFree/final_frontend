@@ -15,6 +15,8 @@ header {
 
 header {
     position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .brand {
@@ -31,7 +33,12 @@ header {
 
     font-size: 2.2rem;
     line-height: 1;
+    text-decoration: none;
 
+}
+
+.brand:hover {
+    color: rgb(172, 3, 177);
 }
 
 .with-shadow {
@@ -44,15 +51,25 @@ header {
     color: black ;
     color: rgb(232, 230, 231) !important;
     border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.about-us{
+.header-item{
     color: white;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
-    margin-right: 20px;
+    margin-right: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 
 
+@media (max-width: 768px) {
+    .header-item{
+        font-size: 0.8rem;
+        margin-right: 1rem;
+    }
+}
