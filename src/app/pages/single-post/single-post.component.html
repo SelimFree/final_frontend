@@ -1,14 +1,14 @@
 <app-header></app-header>
 <div class="contnet">
     <app-side-section></app-side-section>
-    <div class="post">
+    <div class="post" *ngFor="let post of post$">
         <div class="post-header">
-            <div class="title">Video processing with WebCodecs</div>
+            <div class="title">{{post$.title}}</div>
             <div class="sibtitle">
                 <div class="post-date">POSTED 15 DAYS AGO</div>
                 <div class="post-path">PROGRAM / FRONTEND / WEBCODECS</div>
             </div>
-           
+
         </div>
         <mat-divider></mat-divider>
         <div class="post-content">

@@ -10,7 +10,7 @@ import { WritePostComponent } from './pages/write-post/write-post.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
-    {path: 'post', component: SinglePostComponent},
+    {path: 'post/:id', component: SinglePostComponent},
     { path: 'about-us', component: AboutUsComponent },
     { path: 'contact-us', component: ContactUsComponent },
     { path: 'write-post', component: WritePostComponent }

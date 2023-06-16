@@ -12,6 +12,7 @@ import { RecentSectionComponent } from './layout/recent-section/recent-section.c
 import { HomeComponent } from './pages/home/home.component';
 import { SinglePostComponent } from './pages/single-post/single-post.component';
 import { RegisterModalComponent } from './layout/register-modal/register-modal.component';
+import { HttpClientModule } from '@angular/common/http';
 // Material Styles
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
@@ -55,7 +56,8 @@ import { ContactUsComponent } from './layout/contact-us/contact-us.component';
     MatDialogModule,
     MatFormFieldModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
