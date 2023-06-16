@@ -22,7 +22,7 @@ export class SinglePostComponent implements OnInit {
         });
 
         this.articleService.getArticle(this.id).subscribe((data) => {
-            this.post = data
+            this.post = data;
         });
     }
 }
