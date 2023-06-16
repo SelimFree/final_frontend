@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -41,7 +40,8 @@ import { ContactUsComponent } from './layout/contact-us/contact-us.component';
     LoginModalComponent,
     AboutUsComponent,
     WritePostComponent,
-    ContactUsComponent
+    ContactUsComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -57,7 +57,7 @@ import { ContactUsComponent } from './layout/contact-us/contact-us.component';
     MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

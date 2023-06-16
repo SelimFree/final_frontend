@@ -5,6 +5,7 @@ import { HeaderComponent } from 'src/app/layout/header/header.component';
 import { SideSectionComponent } from 'src/app/layout/side-section/side-section.component';
 import { RecentSectionComponent } from 'src/app/layout/recent-section/recent-section.component';
 import { FooterComponent } from 'src/app/layout/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Material Styles
 import { MatIconModule } from '@angular/material/icon';
@@ -30,7 +31,8 @@ describe('HomeComponent', () => {
                 MatIconModule,
                 MatToolbarModule,
                 MatMenuModule,
-                MatDialogModule
+                MatDialogModule,
+                HttpClientModule
             ],
             providers: [
                 {provide: MatDialogRef, useValue: {}},

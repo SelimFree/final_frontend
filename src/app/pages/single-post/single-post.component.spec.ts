@@ -6,13 +6,20 @@ import { SideSectionComponent } from 'src/app/layout/side-section/side-section.c
 import { RecentSectionComponent } from 'src/app/layout/recent-section/recent-section.component';
 import { FooterComponent } from 'src/app/layout/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { ActivatedRoute } from '@angular/router';
 // Material Styles
 import { MatDividerModule } from '@angular/material/divider';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
-import {MAT_DIALOG_DATA, MatDialogModule, MatDialogRef} from '@angular/material/dialog';
+import {
+    MAT_DIALOG_DATA,
+    MatDialogModule,
+    MatDialogRef,
+} from '@angular/material/dialog';
+import { of } from 'rxjs/internal/observable/of';
 
 describe('SinglePostComponent', () => {
     let component: SinglePostComponent;
@@ -34,12 +41,19 @@ describe('SinglePostComponent', () => {
                 MatIconModule,
                 MatToolbarModule,
                 MatMenuModule,
-                MatDialogModule
+                MatDialogModule,
+                HttpClientModule,
             ],
             providers: [
-                {provide: MatDialogRef, useValue: {}},
-                {provide: MAT_DIALOG_DATA, useValue: []},
-            ]
+                { provide: MatDialogRef, useValue: {} },
+                { provide: MAT_DIALOG_DATA, useValue: [] },
+                {
+                    provide: ActivatedRoute,
+                    useValue: {
+                        params: of({ id: 0 }),
+                    },
+                },
+            ],
         }).compileComponents();
 
         fixture = TestBed.createComponent(SinglePostComponent);
