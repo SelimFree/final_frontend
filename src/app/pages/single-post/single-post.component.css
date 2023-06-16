@@ -2,6 +2,8 @@
     padding: 30px;
     display: flex;
     justify-content: space-between;
+    background-color: #3c3c3c;
+    min-height: 100vh;
 }
 
 .post {

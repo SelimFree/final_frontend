@@ -1,7 +1,9 @@
 .recent-section {
     box-sizing: border-box;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    min-width: 300px;
+    /* max-width: 300px; */
+    min-height: 200px;
     margin: auto;
     text-align: center;
     border-radius: 15px;

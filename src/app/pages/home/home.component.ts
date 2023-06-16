@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
     constructor (private articleService : ArticleService) {}
 
     ngOnInit(): void {
+        // Storing fetched data into the pipe then to be easily accessed in html template
         this.articles$ = this.articleService.getArticles().pipe(tap((data) => (this.articles = data)));
     }
 }

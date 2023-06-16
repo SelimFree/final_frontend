@@ -2,6 +2,18 @@
 <div class="contnet">
     <app-side-section></app-side-section>
     <div class="posts-container">
+        <div class="post">
+            <div class="post-header">
+                <div class="title">Welcome to Bunblog</div>
+                <div class="sibtitle">
+                    <div class="post-date">POSTED AT IMPORTANT DATE</div>
+                    <div class="post-path">POSTED BY ADMIN</div>
+                </div>
+            </div>
+            <div class="post-content">
+                Welcome dear user. You can add some articles by using add button below
+            </div>
+        </div>
         <div class="post" *ngFor="let post of articles$ | async" id={{post.id}} routerLink="{{'/post/' + post.id}}">
             <div class="post-header">
                 <div class="title">{{post.title}}</div>

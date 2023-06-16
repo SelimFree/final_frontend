@@ -5,6 +5,7 @@
     min-height: 100%;
     background-color: #3c3c3c;
     color: white;
+    min-height: 100vh;
 }
 
 .posts-container {

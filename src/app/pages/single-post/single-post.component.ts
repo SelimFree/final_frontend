@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { map } from 'rxjs';
+import { tap } from 'rxjs';
 import { ArticleService } from 'src/app/apiconnect.service';
 
 @Component({
@@ -15,11 +15,13 @@ export class SinglePostComponent implements OnInit {
     constructor (private articleService : ArticleService, private route : ActivatedRoute) {}
 
     ngOnInit(): void {
+        // Gettig article id from the url
         this.route.params.subscribe((param) => {
             this.id = parseInt(param["id"]);
         })
 
-        this.post$ = this.articleService.getArticle(this.id).pipe(map((data) => (this.post = data)));
+        // Storing fetched data into the pipe then to be easily accessed in html template
+        this.post$ = this.articleService.getArticle(this.id).pipe(tap((data) => (this.post = data)));
 
     }
 
