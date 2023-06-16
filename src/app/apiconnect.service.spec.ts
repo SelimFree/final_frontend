@@ -1,13 +1,17 @@
 import { TestBed } from '@angular/core/testing';
+import { ArticleService } from './apiconnect.service';
+import { HttpClient } from '@angular/common/http';
 
-import { APICONNECTService } from './apiconnect.service';
-
-describe('APICONNECTService', () => {
-  let service: APICONNECTService;
+describe('ArticleService', () => {
+  let service: ArticleService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(APICONNECTService);
+    TestBed.configureTestingModule({
+        providers: [
+            { provide: HttpClient, useValue: {} },
+        ],
+    });
+    service = TestBed.inject(ArticleService);
   });
 
   it('should be created', () => {
