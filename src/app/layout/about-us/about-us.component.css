@@ -74,5 +74,7 @@ button {
     margin: 0;
     font-size: 2rem;
     color: rgb(230, 229, 229);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
 }
