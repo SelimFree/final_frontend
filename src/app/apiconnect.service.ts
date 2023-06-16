@@ -10,22 +10,18 @@ export class ArticleService {
   constructor(private http: HttpClient) {}
 
   getArticle(id: number) {
-    return this.http.get(`${this.baseUrl}/article/${id}`);
+    return this.http.get(`${this.baseUrl}/posts/${id}`);
   }
 
   getArticles() {
-    return this.http.get(`${this.baseUrl}/articles`);
-  }
-
-  updateArticle(id: number, article: any) {
-    return this.http.put(`${this.baseUrl}/article/${id}`, article);
+    return this.http.get(`${this.baseUrl}/posts`);
   }
 
   deleteArticle(id: number) {
-    return this.http.delete(`${this.baseUrl}/article/${id}`);
+    return this.http.delete(`${this.baseUrl}/posts/${id}`);
   }
 
   createArticle(article: any) {
-    return this.http.post(`${this.baseUrl}/articles`, article);
+    return this.http.post(`${this.baseUrl}/posts`, article);
   }
 }

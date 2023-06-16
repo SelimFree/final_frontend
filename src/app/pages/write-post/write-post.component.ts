@@ -15,8 +15,10 @@ export class WritePostComponent implements OnInit {
 
     createPost(data:any) {
         try {
+            let now = new Date()
             // Passing the data from the html form and adding a user property to it, then posting
-            return this.articleService.createArticle({...data, author: this.user}).subscribe((result) => {
+            console.log({...data, Posted: now})
+            return this.articleService.createArticle({...data, Posted: now}).subscribe((result) => {
                 // Go back to some page
                 this.router.navigateByUrl("/")
             });
