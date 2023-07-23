@@ -1,7 +1,6 @@
 ## Frontend 
 
 /**
-
  * This software is a blog website that is made using Angular for the frontend and Laravel for the backend.
  * The main file in the Frontened is the src file which consists of:
  * index.html page: which shows the final result of the app components through the placeholder "<app-root></app-root>" 
